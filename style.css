@@ -63,7 +63,6 @@ button:hover {
 }
 
 .number {
-  background-color: #28a745;
   color: white;
   width: 40px;
   height: 40px;
@@ -75,3 +74,10 @@ button:hover {
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+/* Specific colors for each combination */
+.combination-color-0 .number { background-color: #007bff; } /* Blue */
+.combination-color-1 .number { background-color: #28a745; } /* Green */
+.combination-color-2 .number { background-color: #ffc107; } /* Orange */
+.combination-color-3 .number { background-color: #dc3545; } /* Red */
+.combination-color-4 .number { background-color: #6f42c1; } /* Purple */

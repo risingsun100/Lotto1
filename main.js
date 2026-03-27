@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const combination = generateUniqueNumbers(6, 1, 45);
       const combinationDiv = document.createElement('div');
       combinationDiv.classList.add('combination');
+      combinationDiv.classList.add(`combination-color-${i}`); // Add specific color class
 
       combination.forEach(number => {
         const numberSpan = document.createElement('span');
