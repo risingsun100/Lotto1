@@ -24,6 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
         numberSpan.classList.add('number');
         numberSpan.textContent = number;
         combinationDiv.appendChild(numberSpan);
+
+        // Trigger bounce animation
+        requestAnimationFrame(() => {
+          numberSpan.classList.add('bouncing');
+          setTimeout(() => {
+            numberSpan.classList.remove('bouncing');
+          }, 300); // Animation duration is 0.3s
+        });
       });
       lottoNumbersDiv.appendChild(combinationDiv);
     }

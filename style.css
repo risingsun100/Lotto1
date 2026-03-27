@@ -73,6 +73,8 @@ button:hover {
   font-size: 18px;
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Ensure transform is clean for animation */
+  transition: transform 0.1s ease-out;
 }
 
 /* Specific colors for each combination */
@@ -81,3 +83,14 @@ button:hover {
 .combination-color-2 .number { background-color: #ffc107; } /* Orange */
 .combination-color-3 .number { background-color: #dc3545; } /* Red */
 .combination-color-4 .number { background-color: #6f42c1; } /* Purple */
+
+/* Bounce Animation */
+@keyframes bounce-animation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); } /* Bounce up slightly */
+  100% { transform: translateY(0); }
+}
+
+.number.bouncing {
+  animation: bounce-animation 0.3s ease-out;
+}
