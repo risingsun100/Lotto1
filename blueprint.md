@@ -1,15 +1,20 @@
 # Blueprint for Lotto Number Generator
 
 ## Overview
-This project implements a simple web-based lotto number generator. Users can click a button to generate 5 unique combinations of 6 numbers (from 1 to 45). The application uses HTML for structure, CSS for styling, and vanilla JavaScript for the generation logic.
+This project implements a web-based lotto number generator with a Korean user interface. Users can generate 5 sets of lotto numbers (6 main numbers + 1 bonus number) with a single click. The application features a vibrant design, animations, and sound effects.
 
 ## Current Features
-- Updated `index.html` with a title, main heading, a button (`generateBtn`), and a display area (`lottoNumbers`) for combinations.
-- Implemented `style.css` with styling for the body, container, button, and the display of individual lotto numbers and combinations, including distinct color definitions for each of the 5 combinations.
-- Implemented `main.js` with JavaScript logic to:
-    *   Generate a single unique lotto combination (6 numbers between 1 and 45).
-    *   Generate 5 such combinations upon button click or initial load.
-    *   Display these combinations in the `lottoNumbers` div, clearing previous results, and dynamically applying distinct color classes to each combination.
-    *   Added event listener to `generateBtn`.
-- Enhanced styling for the `.combination` class in `style.css` to make each combination appear as a distinct, rounded container ("ball shape") for its numbers, with a background, padding, larger border-radius, and an inner shadow.
-- Implemented a subtle bouncing animation for each individual Lotto number. This animation is triggered when new numbers are generated, making each number "bounce" slightly after appearing.
+- **Korean Localization:** The UI is entirely in Korean ("로또 번호 추천기", "번호 뽑기").
+- **Bonus Number Support:** Each set now includes 6 main numbers and 1 distinct bonus number.
+- **Dynamic Styling:**
+    *   Lotto balls are color-coded based on their value (1-10: yellow, 11-20: blue, 21-30: red, 31-40: gray, 41-45: green).
+    *   Responsive layout with a modern gradient background.
+    *   Hover effects on buttons and interactive shadows.
+- **Animations:** Subtle "bounce" animation when numbers are generated.
+- **Sound Effects:** Button click sound effect using an external audio source.
+- **Project Structure:** Adheres to a clean separation of concerns with `index.html`, `style.css`, and `main.js`.
+
+## Implementation Details
+- `index.html`: Entry point with Korean text, links to external CSS and JS, and an audio element for sound.
+- `style.css`: Contains all visual styles, including the gradient background, ball colors, and the bounce animation keyframes.
+- `main.js`: Contains the logic for generating unique numbers, determining ball colors, and updating the DOM dynamically.
