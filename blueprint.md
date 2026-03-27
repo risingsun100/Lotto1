@@ -11,3 +11,4 @@ This project implements a simple web-based lotto number generator. Users can cli
     *   Generate 5 such combinations upon button click or initial load.
     *   Display these combinations in the `lottoNumbers` div, clearing previous results.
     *   Added event listener to `generateBtn`.
+- Enhanced styling for the `.combination` class in `style.css` to make each combination appear as a distinct, rounded container ("ball shape") for its numbers, with a background, padding, larger border-radius, and an inner shadow.

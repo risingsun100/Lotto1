@@ -55,6 +55,11 @@ button:hover {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  background-color: #e9ecef; /* Light background for the combination "ball" */
+  padding: 15px 20px;
+  border-radius: 25px; /* More rounded corners for the combination container */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+  align-items: center;
 }
 
 .number {
